@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tax Bookkeeping</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="" class="navbar-brand p-0 logo">
+                <h3 class="display-6 "><img class="me-2" src="./img/textbook.svg"><strong>Tax</strong> Bookkeeping</h3>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="#whoWeAre" class="nav-item nav-link">About</a>
+                    <a href="#service" class="nav-item nav-link">Our Service</a>
+                </div>
+                <div class="team-icon d-none d-xl-flex justify-content-center me-3">
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <a href="#whoWeAre" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0">Explore More</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Carousel Start -->
+    <div id="banner" class="header-carousel owl-carousel">
+        <div class="header-carousel-item">
+            <img src="https://plus.unsplash.com/premium_photo-1679524640205-00316d00157a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="img-fluid w-100" alt="Image">
+            <div class="carousel-caption">
+                <div class="container align-items-center py-4">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s"
+                            style="animation-delay: 1s;">
+                            <div class="text-start">
+                                <h4 class="text-primary text-uppercase fw-bold mb-4">Start your journey here</h4>
+                                <h1 class="display-4 text-uppercase text-white mb-4">Tax Bookkeeping: A Perfect
+                                    Bookkeeper For Your Unique Business </h1>
+
+                                <div class="d-flex flex-shrink-0">
+                                    <a class="btn btn-primary rounded-pill text-white py-3 px-5"
+                                        href="#whoWeAre">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 fadeInRight animated" data-animation="fadeInRight" data-delay="1s"
+                            style="animation-delay: 1s;">
+                            <div class="ticket-form p-5">
+                                <h2 class="text-dark text-uppercase mb-4">Request a free consult now!</h2>
+                                <form>
+                                    <div class="row g-4">
+                                        <div class="col-12">
+                                            <input type="text" class="form-control border-0 py-2" id="name"
+                                                placeholder="Your Name">
+                                        </div>
+                                        <div class="col-12 col-xl-6">
+                                            <input type="phone" class="form-control border-0 py-2" id="phone"
+                                                placeholder="Phone">
+                                        </div>
+                                        <div class="col-12 col-xl-6">
+                                            <input type="email" class="form-control border-0 py-2" id="email"
+                                                placeholder="Your Email">
+                                        </div>
+                                        <div class="col-12">
+                                            <textarea id="message" class="form-control border-0 py-2" name="message"
+                                                rows="3" placeholder="Tell us about yourself"></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="button" class="btn btn-primary w-100 py-2 px-5">Submit
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <div id="whoWeAre" class="container-fluid about mt-3">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-xl-12 wow fadeInUp" data-wow-delay="0.2s">
+                    <div>
+                        <h4 class="text-primary mt-4 text-center">Who we are</h4>
+                        <h1 class="display-5 mb-4 text-center">We Track records of; All Your Books In a Taxable Manner
+                        </h1>
+                        <p class="mb-2">Simple business operations are getting quite complex, and each simple decision
+                            makes a great business impact. So instead of ignoring the need for accurate and advanced
+                            bookkeeping, efficient taxation, importance to employee administration and payroll, audits,
+                            virtual CFOs. Connect Tax Bookkeeping Today, and let us help you.
+                        </p>
+                        <p class="mb-5">We still have queries about the changing market scenario. Schedule a free
+                            session, and we will let you know, how basic accounting and financing operations have
+                            changed.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+    <div id="about" class="container-fluid feature py-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.2s"
+                style="max-width: 800px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <h4 class="text-primary">Your Assistant To Finance</h4>
+                <h1 class="display-5 mb-4">Let’s Better Understand Tax Bookkeeping</h1>
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 d-flex wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="feature-item">
+                        <div class="feature-content p-4">
+                            <div class="feature-content-inner">
+                                <h4 class="text-primary">Vision</h4>
+                                <p class="text-dark">We want to support small and medium organisations globally; to grow
+                                    by having our ways of accounting and financing.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="feature-item">
+                        <div class="feature-content p-4">
+                            <div class="feature-content-inner">
+                                <h4 class="text-primary">Mission</h4>
+                                <p class="text-dark">Our mission is to become the known and desired brand for
+                                    bookkeeping, taxation, auditing, and other services across the globe
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="feature-item">
+                        <div class="feature-content p-4">
+                            <div class="feature-content-inner">
+                                <h4 class="text-primary">Our Values</h4>
+                                <ul class="list-unstyled mt-3">
+                                    <li>
+                                        <i class="fa fa-check text-primary me-2"></i>
+                                        <h5 class="text-primary d-inline">Integrity</h5>
+                                        <p class="text-dark ms-3">To achieve our goals to vision, our culture is
+                                            designed to be honest, transparent, and true. Our dedicated team integrates
+                                            with our clients and integrates better.</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check text-primary me-2"></i>
+                                        <h5 class="text-primary d-inline">Quality</h5>
+                                        <p class="text-dark ms-3">Our goals, acts, and actions are dictated by quality
+                                            needs. Quality needs guide our technology, procedures, and policies.</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check text-primary me-2"></i>
+                                        <h5 class="text-primary d-inline">Customer Focus</h5>
+                                        <p class="text-dark ms-3">Our actions are guided by client needs, and we do
+                                            everything to satisfy them. Our workload for planning is reduced as we are
+                                            clear on satisfying the client at the end.</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check text-primary me-2"></i>
+                                        <h5 class="text-primary d-inline">Innovation</h5>
+                                        <p class="text-dark ms-3">Our recruitment cell well aligns with our business
+                                            goals to have creative employees and create a culture to bring innovation to
+                                            our services each day. Connect with us to know what unique services we
+                                            offer.</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check text-primary me-2"></i>
+                                        <h5 class="text-primary d-inline">Confidentiality</h5>
+                                        <p class="text-dark ms-3">It is our secret to success where we promise to secure
+                                            client data, and even non-team employees do not have access to your data.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+
+
+    <!-- Service Start -->
+    <div id="feature" class="container-fluid service py-5">
+        <div class="container service-section py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Get more with Us</h4>
+                <h1 class="display-5 text-white mb-4">Extra Perks</h1>
+            </div>
+            <div class="row g-4">
+                <!-- <div class="col-md-10 col-lg-8 col-xl-8 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-days p-4">
+                        <div
+                            class="py-2 border-bottom border-top d-flex align-items-center justify-content-between flex-wrap">
+                            <h4 class="mb-0 pb-2 pb-sm-0">Monday - Friday</h4>
+                            <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>11:00 AM - 16:00 PM</p>
+                        </div>
+                        <div
+                            class="py-2 border-bottom d-flex align-items-center justify-content-between flex-shrink-1 flex-wrap">
+                            <h4 class="mb-0 pb-2 pb-sm-0">Saturday - Sunday</h4>
+                            <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>09:00 AM - 17:00 PM</p>
+                        </div>
+                        <div
+                            class="py-2 border-bottom d-flex align-items-center justify-content-between flex-shrink-1 flex-wrap">
+                            <h4 class="mb-0">Holiday</h4>
+                            <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>09:00 AM - 17:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div> -->
+
+                <div class="col-md-4" data-wow-delay="0.2s">
+                    <div class="service-item p-4">
+                        <div class="service-content">
+
+                            <a href="#" class="h4 d-inline-block mb-3">Customisation</a>
+                            <p class="mb-0">We innovative organisation culture to come up with unique ideas to serve you
+                                better. Schedule a free session and know, what unique we have for you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-wow-delay="0.4s">
+                    <div class="service-item p-4">
+                        <div class="service-content">
+
+                            <a href="#" class="h4 d-inline-block mb-3">Proactive</a>
+                            <p class="mb-0">Our experienced team analyses the situation in advance and makes suggestions
+                                before the hurdle occurs. Get our oversight for competitive advantage
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-wow-delay="0.6s">
+                    <div class="service-item p-4">
+                        <div class="service-content">
+
+                            <a href="#" class="h4 d-inline-block mb-3">Compliance</a>
+                            <p class="mb-0">Our global alliance ensures you comply with laws, principles and standards,
+                                whether it is your home nation or foreign market. We are just a call away.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-wow-delay="0.8s">
+                    <div class="service-item p-4">
+                        <div class="service-content">
+                            <a href="#" class="h4 d-inline-block mb-3">Reliability</a>
+                            <p class="mb-0">Tax Bookkeeping is a reliable service provider, supported by the views of
+                                our hundreds of clients. Consistent results with persistent success
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-wow-delay="0.8s">
+                    <div class="service-item p-4">
+                        <div class="service-content">
+
+                            <a href="#" class="h4 d-inline-block mb-3">Mega Saving</a>
+                            <p class="mb-0">Save more with Tax Bookkeeping as, our experienced team optimally utilise
+                                resources, and share profits with you.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-wow-delay="0.8s">
+                    <div class="service-item p-4">
+                        <div class="service-content">
+
+                            <a href="#" class="h4 d-inline-block mb-3">Mega Saving</a>
+                            <p class="mb-0">Our core focus on technology allows us to use AI and other platforms to
+                                reduce, time and error, streamline our services and reduce errors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Ticket Packages Start -->
+    <div class="container-fluid py-5 face-div">
+        <div class="container py-5">
+            <div class="row g-5 align-items-stretch h-100">
+
+                <div class="col-lg-12 col-xl-12 wow fadeInUp h-100" data-wow-delay="0.4s">
+                    <div class="pricing-item bg-dark rounded text-left p-5 h-100 d-flex flex-column">
+                        <div class="row">
+                            <div class="col-md-7 order-md-1 order-2">
+                                <div class="pb-4">
+                                    <h2 class="mb-4 text-primary border-bottom pb-1">Discover The Face Behind The Brand
+                                    </h2>
+                                    <p class="mb-4">Mr Kaushik has driven Tax Bookkeeping to new heights, his enthusiasm
+                                        for
+                                        learning and gaining knowledge has allowed him to gain unique experience,
+                                        knowledge, and
+                                        skills over these years. He has supported many organizations in accounting,
+                                        taxation,
+                                        audit, bookkeeping, virtual CFO, GST/HST, payroll, data entry, international
+                                        compliance,
+                                        and more.</p>
+                                    <p class="mb-4">His vision to support others with his knowledge has led to his
+                                        alliance with
+                                        global CAs and CPAs to ensure our clients comply with the latest laws. He has
+                                        never
+                                        stopped learning and adapts to the latest AI-based technology which we use for
+                                        our
+                                        clients to ensure quality services with quick turnaround time.</p>
+                                </div>
+                                <div class="mt-auto">
+                                    <a href="#" class="btn btn-light py-3 px-5">Mr. Kaushik Thakkar
+                                        <br><strong>(Managing
+                                            Director)</strong></a>
+                                </div>
+                            </div>
+                            <div class="col-md-5 px-2 order-md-2 order-1 ceo-img-box">
+                                <img class="h-100 w-100"
+                                    src="https://cleveraccounting.ca/assets/images/sectionimg/IMG-20240708-WA0002.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Ticket Packages End -->
+
+
+    <!-- Attractions Start -->
+    <div id="service" class="container-fluid attractions py-5">
+        <div class="container attractions-section py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Architecture</h4>
+                <h1 class="display-5 text-white mb-4">Business Model </h1>
+                <p class="text-white mb-0">Every business has its way of serving, and Tax Bookkeeping is client
+                    client-oriented business that leverages technology to make businesses grow with the least cost
+                    possible, and we pass on those profits and costs saved to you.
+
+                </p>
+            </div>
+            <div class="owl-carousel attractions-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="blog-item attractions-item">
+
+                    <div class="blog-content p-4">
+                        <a href="#" class="h4 d-inline-block mb-4 att-head">Bookkeeping Services</a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Detailed data recording
+                                </p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Reconciliation services</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Preparing Journal and ledger</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Avoid errors and duplication with AI</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="blog-item attractions-item">
+
+                    <div class="blog-content p-4">
+                        <a href="#" class="h4 d-inline-block mb-4 att-head">Tax Compliance</a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">File tax returns</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Measure tax amount with taxable products</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Get help with tax registrations</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Employee deductions, corporate tax, personal tax</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="blog-item attractions-item">
+                    <div class="blog-content p-4">
+                        <a href="#" class="h4 d-inline-block mb-4 att-head">Business Consulting</a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Get personalised services</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Get suggestions at your comfort</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Expert advice at affordable fees</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Get global knowledge and opportunities</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="blog-item attractions-item">
+                    <div class="blog-content p-4">
+                        <a href="#" class="h4 d-inline-block mb-4 att-head">Payroll Administration</a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Source deductions</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Cloud-based employee records</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Premium employee portal access</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Direct account pay</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="blog-item attractions-item">
+                    <div class="blog-content p-4">
+                        <a href="#" class="h4 d-inline-block mb-4 att-head">Financial Auditing</a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Industry approved procedures</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Represents you to external authorities</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Internal & External Audits</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Custom Audits</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="blog-item attractions-item">
+                    <div class="blog-content p-4">
+                        <a href="#" class="h4 d-inline-block mb-4 att-head">Remote/Cloud Accounting
+                        </a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Proactive personalised suggestions</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Brings in creativity</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Professionals at your service</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Low recruitment cost</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Statutory Compliance -->
+                <div class="blog-item attractions-item">
+                    <div class="blog-content p-4">
+                        <a href="#" class="h4 d-inline-block mb-4 att-head">Statutory Compliance</a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Creates trust and transparency</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Attract Investors</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Protect from frauds and errors</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Avoid penalties</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Finance and Accounting Outsourcing -->
+                <div class="blog-item attractions-item">
+                    <div class="blog-content p-4">
+                        <a href="#" class="h4 d-inline-block mb-4 att-head">Finance and Accounting Outsourcing</a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Get professional support in peak season</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Professional experience at minimal fees</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Focus on core product & service</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Ensure Mega savings</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Budget and Planning -->
+                <div class="blog-item attractions-item">
+                    <div class="blog-content p-4">
+                        <a href="#" class="h4 d-inline-block mb-4 att-head">Budget and Planning</a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">AI-based predictions</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Custom budgets crafted for each need</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Resource management</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Market trend and analysis-based decisions</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Data Processing -->
+                <div class="blog-item attractions-item">
+                    <div class="blog-content p-4">
+                        <a href="#" class="h4 d-inline-block mb-4 att-head">Data Processing</a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Streamline data management</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Platform-based data processing</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">No errors or missouts on information</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Data analysis for decision-making</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- GST/HST -->
+                <div class="blog-item attractions-item">
+                    <div class="blog-content p-4">
+                        <a href="#" class="h4 d-inline-block mb-4 att-head">GST/HST</a>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Tax filings</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Compliance with relevant global laws</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Accurate product categorisations</p>
+                            </li>
+                            <li><i class="fa fa-chevron-right me-2 d-inline text-primary"></i>
+                                <p class="d-inline">Least client interruptions</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Attractions End -->
+
+
+
+
+    <!-- Team Start -->
+    <div id="protocol" class="container-fluid team pb-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Our Approach</h4>
+                <h1 class="display-5 mb-4">It’s Tax Bookkeeping Protocol</h1>
+                <p class="mb-0">Dedicated professionals from different fields have come up with the process below, which
+                    ensures to satisfy clients with smooth experience.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-6 col-xl-4 d-flex wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item p-4">
+                        <div class="team-content">
+                            <div class="d-flex justify-content-between border-bottom pb-4 mb-3">
+                                <div class="text-start">
+                                    <h4 class="mb-0">Overview</h4>
+                                </div>
+                            </div>
+                            <p class="text-center mb-0">Our team collects all your services-related data, which you can
+                                share or upload to our platform. The documents are evaluated to see gaps and errors, and
+                                what sorts of corrective actions need to be taken to meet your goals
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 d-flex wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item p-4">
+                        <div class="team-content">
+                            <div class="d-flex justify-content-between border-bottom pb-4 mb-3">
+                                <div class="text-start">
+                                    <h4 class="mb-0">Analyse</h4>
+                                </div>
+                            </div>
+                            <p class="text-center mb-0">Our professional analysts use AI platforms to analyse data and
+                                make relevant recommendations and reports as per your goals and industry. Services
+                                changes and recommendations for services are made at this stage.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-4 d-flex wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item p-4">
+                        <div class="team-content">
+                            <div class="d-flex justify-content-between border-bottom pb-4 mb-3">
+                                <div class="text-start">
+                                    <h4 class="mb-0">Planning</h4>
+                                </div>
+                            </div>
+                            <p class="text-center mb-0">After contracts, accurate development and delivery planning are
+                                done. One professional and a team of dedicated staff are allotted for your service.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-4 d-flex wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item p-4">
+                        <div class="team-content">
+                            <div class="d-flex justify-content-between border-bottom pb-4 mb-3">
+                                <div class="text-start">
+                                    <h4 class="mb-0">Delivery</h4>
+                                </div>
+                            </div>
+                            <p class="text-center mb-0">This is where the actual service offering starts. It is the
+                                stage where we make active changes to adjust our offerings with our culture, processes,
+                                and policies.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-4 d-flex wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item p-4">
+                        <div class="team-content">
+                            <div class="d-flex justify-content-between border-bottom pb-4 mb-3">
+                                <div class="text-start">
+                                    <h4 class="mb-0">Post-delivery support</h4>
+                                </div>
+                            </div>
+                            <p class="text-center mb-0">The changes in services, errors in existing offerings, and
+                                adjustments are handled by the customer service department with immediate actions taken.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <section id="FAQ" class="faq-section py-3 mt-5">
+                <div class="container">
+                    <div class="w-lg-50 mx-auto">
+                        <h2 class="mb-4">Have a Question?</h2>
+                        <div class="accordion accordion-flush" id="accordionExample">
+                            <!-- 1: coll1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#coll1" aria-expanded="true" aria-controls="coll1">
+                                        <h5> When do I need to register for GST/HST?</h5>
+                                    </button>
+                                </h2>
+                                <div id="coll1" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        When the gross business income exceeds the given amount, GST/HST registration
+                                        needs to be done and taxes need to be paid. If the income over a continuous
+                                        four-quarter period is more than $30,000, registration is required. This income
+                                        is the sum of revenue from all business operations before expenses are
+                                        calculated. Don't worry—connect with us, and we will let you know whether you
+                                        need to register or not and how much to pay. Connect now.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2: coll2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#coll2" aria-expanded="false" aria-controls="coll2">
+                                        <h5> Do you offer audit services related to taxes?</h5>
+                                    </button>
+                                </h2>
+                                <div id="coll2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, we offer a wide range of audit services. Get the best audit reports as per
+                                        industry standards and compliance.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3: coll3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#coll3" aria-expanded="false" aria-controls="coll3">
+                                        <h5> Is filing provincial and federal taxes important?</h5>
+                                    </button>
+                                </h2>
+                                <div id="coll3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, for Canadian residents, based on the provinces and commodities being
+                                        traded, both provincial and federal taxes need to be paid.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4: coll4 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#coll4" aria-expanded="false" aria-controls="coll4">
+                                        <h5> How can I schedule a free session with Tax Bookkeeping?</h5>
+                                    </button>
+                                </h2>
+                                <div id="coll4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        You can email us, call us, or fill out the form below, and our staff will
+                                        connect with you to schedule your free meeting to discuss your business growth
+                                        and the changes required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 5: coll5 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#coll5" aria-expanded="false" aria-controls="coll5">
+                                        <h5> What are the charges for your services?</h5>
+                                    </button>
+                                </h2>
+                                <div id="coll5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Our charges differ with every service we offer, as the same service is tailored
+                                        differently for each client. Connect with us, and we will provide you with the
+                                        exact amount and explain how the services will benefit you.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-4 ">
+                    <div class="footer-item">
+                        <a href="index.html" class="p-0">
+                            <h4 class="text-white mb-4"><img class="me-2 footer-logo" src="./img/textbook.svg">Tax
+                                Bookkeeping</h4>
+                            <!-- <img src="img/logo.png" alt="Logo"> -->
+                        </a>
+                        <p class="mb-2">701 Market Street, Suite 110 PMB1424, Saint Louis, MO 63101, United States</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Contact Us</h4>
+
+                        <!-- Location -->
+                        <div class="d-flex align-items-center">
+                            <a href="https://www.google.com/maps/search/?api=1&query=123+Street+New+York+USA"
+                                target="_blank" class="text-decoration-none d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">123 Street New York, USA</p>
+                            </a>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="d-flex align-items-center">
+                            <a href="mailto:cora@taxbookkeepings.com"
+                                class="text-decoration-none d-flex align-items-center">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <p class="text-white mb-0">cora@taxbookkeepings.com</p>
+                            </a>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="d-flex align-items-center">
+                            <a href="tel:+13155576525" class="text-decoration-none d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">(+1 (315)-557-6525)</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <a href="#about"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="#feature"><i class="fas fa-angle-right me-2"></i> Feature</a>
+                        <a href="#service"><i class="fas fa-angle-right me-2"></i>Services</a>
+                        <a href="#protocol"><i class="fas fa-angle-right me-2"></i> Protocol</a>
+                        <a href="#FAQ"><i class="fas fa-angle-right me-2"></i> FAQs</a>
+                        <a href="#banner"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right
+                        reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">Pritesh</a>
+                    Distributed By <a class="border-bottom text-white" href="https://themewagon.com">Pritesh</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

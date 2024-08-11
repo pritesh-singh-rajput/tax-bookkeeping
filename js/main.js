@@ -134,5 +134,14 @@
     });
 
 
+    $('.navbar-nav a').on('click', function() {
+        $('.navbar-collapse').collapse('hide');
+    });
+    
+    $('.explore-btn').on('click', function() {
+        $('.navbar-collapse').collapse('hide');
+    });
+
+
 })(jQuery);
 

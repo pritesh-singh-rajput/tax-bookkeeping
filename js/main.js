@@ -34,7 +34,9 @@
         smartSpeed: 500,
         dots: false,
         loop: true,
-        nav : true,
+        nav : false,
+        touchDrag  : false,
+        mouseDrag  : false,
         navText : [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-down"></i>'
@@ -140,6 +142,39 @@
     
     $('.explore-btn').on('click', function() {
         $('.navbar-collapse').collapse('hide');
+    });
+
+    $('#myForm').on('submit', function(e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        if (this.checkValidity()) { // Check if the form is valid
+            // Collect form data
+            const formData = {
+                name: $('#name').val(),
+                phone: $('#phone').val(),
+                email: $('#email').val(),
+                message: $('#message').val()
+            };
+
+            // Make an AJAX POST request
+            $.ajax({
+                url: 'https://your-api-endpoint.com/submit', // Replace with your API endpoint
+                type: 'POST',
+                data: JSON.stringify(formData),
+                contentType: 'application/json',
+                success: function(response) {
+                    alert('Form submitted successfully!');
+                    // Handle success response
+                },
+                error: function(error) {
+                    alert('There was an error submitting the form.');
+                    // Handle error response
+                }
+            });
+        } else {
+            // If the form is not valid, trigger HTML5 validation error messages
+            this.reportValidity();
+        }
     });
 
 

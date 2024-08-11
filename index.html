@@ -104,30 +104,27 @@
                             style="animation-delay: 1s;">
                             <div class="ticket-form p-5">
                                 <h2 class="text-dark text-uppercase mb-4">Request a free consult now!</h2>
-                                <form>
+                                <form id="myForm">
                                     <div class="row g-4">
                                         <div class="col-12">
-                                            <input type="text" class="form-control border-0 py-2" id="name"
-                                                placeholder="Your Name">
+                                            <input type="text" class="form-control border-0 py-2" id="name" name="name" placeholder="Your Name" required>
                                         </div>
                                         <div class="col-12 col-xl-6">
-                                            <input type="phone" class="form-control border-0 py-2" id="phone"
-                                                placeholder="Phone">
+                                            <input type="tel" class="form-control border-0 py-2" id="phone" name="phone" placeholder="Phone" required 
+                                                   pattern="^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$|^[0-9]{10}$">
                                         </div>
                                         <div class="col-12 col-xl-6">
-                                            <input type="email" class="form-control border-0 py-2" id="email"
-                                                placeholder="Your Email">
+                                            <input type="email" class="form-control border-0 py-2" id="email" name="email" placeholder="Your Email" required>
                                         </div>
                                         <div class="col-12">
-                                            <textarea id="message" class="form-control border-0 py-2" name="message"
-                                                rows="3" placeholder="Tell us about yourself"></textarea>
+                                            <textarea id="message" class="form-control border-0 py-2" name="message" rows="3" placeholder="Tell us about yourself" required></textarea>
                                         </div>
                                         <div class="col-12">
-                                            <button type="button" class="btn btn-primary w-100 py-2 px-5">Submit
-                                                Now</button>
+                                            <button type="submit" class="btn btn-primary w-100 py-2 px-5">Submit Now</button>
                                         </div>
                                     </div>
                                 </form>
+                                
                             </div>
                         </div>
                     </div>
@@ -357,7 +354,7 @@
                     <div class="service-item p-4">
                         <div class="service-content">
 
-                            <a href="#" class="h4 d-inline-block mb-3">Mega Saving</a>
+                            <a href="#" class="h4 d-inline-block mb-3">Digitalisation</a>
                             <p class="mb-0">Our core focus on technology allows us to use AI and other platforms to
                                 reduce, time and error, streamline our services and reduce errors.
                             </p>
@@ -432,7 +429,7 @@
     <div id="service" class="container-fluid attractions py-5">
         <div class="container attractions-section py-5">
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                <h4 class="text-primary">Architecture</h4>
+                <h4 class="text-primary">Our Services</h4>
                 <h1 class="display-5 text-white mb-4">Business Model </h1>
                 <p class="text-white mb-0">Every business has its way of serving, and Tax Bookkeeping is client
                     client-oriented business that leverages technology to make businesses grow with the least cost

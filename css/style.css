@@ -683,6 +683,13 @@
 .gallery .gallery-item:hover .search-icon {
     opacity: 1;
 }
+
+.btn-primary:active{
+    background-color: #ff8225 !important;
+}
+.btn-primary:focus{
+    background-color: #ff8225 !important;
+}
 /*** Gallery End ***/
 
 /*** Blog Start ***/

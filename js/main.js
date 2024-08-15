@@ -1,3 +1,54 @@
+   // Back to top button
+   document.getElementById('myForm').addEventListener('submit', async function(event) {
+    event.preventDefault();
+
+    const formData = {
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+    };
+
+    try {
+
+        document.getElementById("spinner").classList.add("show-transparent");
+
+        const response = await fetch('https://tax-bookkeeping-db.vercel.app/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+            // Show the Bootstrap modal
+            const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+            thankYouModal.show();
+
+            // Reload the page when the modal is closed
+            document.getElementById('thankYouModal').addEventListener('hidden.bs.modal', function () {
+                window.location.reload();
+            });
+        } else {
+        document.getElementById("spinner").classList.remove("show-transparent");
+        const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+            errorModal.show();
+            // alert('Error: ' + result.error);
+        }
+    } catch (error) {
+        document.getElementById("spinner").classList.remove("show-transparent");
+        console.error('Error submitting form:', error);
+        const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+            errorModal.show();
+        // alert('An error occurred while submitting the form');
+    }
+});
+
+
+
+
 (function ($) {
     "use strict";
 
@@ -25,23 +76,6 @@
         }
     });
 
-
-    // Hero Header carousel
-    $(".header-carousel").owlCarousel({
-        animateOut: 'slideOutDown',
-        items: 1,
-        autoplay: true,
-        smartSpeed: 500,
-        dots: false,
-        loop: true,
-        nav : false,
-        touchDrag  : false,
-        mouseDrag  : false,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-down"></i>'
-        ],
-    });
 
 
     // attractions carousel
@@ -120,63 +154,6 @@
         delay: 5,
         time: 2000
     });
-
-
-   // Back to top button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
-    } else {
-        $('.back-to-top').fadeOut('slow');
-    }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
-
-
-    $('.navbar-nav a').on('click', function() {
-        $('.navbar-collapse').collapse('hide');
-    });
-    
-    $('.explore-btn').on('click', function() {
-        $('.navbar-collapse').collapse('hide');
-    });
-
-    $('#myForm').on('submit', function(e) {
-        e.preventDefault(); // Prevent the default form submission
-
-        if (this.checkValidity()) { // Check if the form is valid
-            // Collect form data
-            const formData = {
-                name: $('#name').val(),
-                phone: $('#phone').val(),
-                email: $('#email').val(),
-                message: $('#message').val()
-            };
-
-            // Make an AJAX POST request
-            $.ajax({
-                url: 'https://your-api-endpoint.com/submit', // Replace with your API endpoint
-                type: 'POST',
-                data: JSON.stringify(formData),
-                contentType: 'application/json',
-                success: function(response) {
-                    alert('Form submitted successfully!');
-                    // Handle success response
-                },
-                error: function(error) {
-                    alert('There was an error submitting the form.');
-                    // Handle error response
-                }
-            });
-        } else {
-            // If the form is not valid, trigger HTML5 validation error messages
-            this.reportValidity();
-        }
-    });
-
 
 })(jQuery);
 

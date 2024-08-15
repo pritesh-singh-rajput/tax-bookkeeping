@@ -80,7 +80,7 @@
     <!-- Navbar & Hero End -->
 
     <!-- Carousel Start -->
-    <div id="banner" class="header-carousel owl-carousel">
+    <div id="banner" class="header-carousel">
         <div class="header-carousel-item">
             <img src="https://plus.unsplash.com/premium_photo-1679524640205-00316d00157a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 class="img-fluid w-100" alt="Image">
@@ -164,7 +164,7 @@
     <!-- Feature Start -->
     <div id="about" class="container-fluid feature py-5">
         <div class="container pb-5">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.2s"
+            <div class="text-center mx-auto wow fadeInUp mt-3" data-wow-delay="0.2s"
                 style="max-width: 800px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                 <h4 class="text-primary">Your Assistant To Finance</h4>
                 <h1 class="display-5 mb-4">Let’s Better Understand Tax Bookkeeping</h1>
@@ -214,7 +214,7 @@
                                     <img class="value-img" src="/icons/values.svg" alt="">
                                 </div>
                             </div>
-                            <div class="feature-content-inner">
+                            <div class="feature-content-inner d-md-block d-none">
                                 <h4 class="text-primary">Our Values</h4>
                                 <div class="row mt-3">
                                     <div class="col-md-6 pt-2 bg-dark wow fadeInLeft" data-wow-delay="0.4s">
@@ -241,6 +241,47 @@
                                         <i class="fa fa-check text-primary me-2"></i>
                                         <h5 class="text-primary d-inline">Innovation</h5>
                                         <p class="text-white ms-3">Our recruitment cell well aligns with our business
+                                            goals to have creative employees and create a culture to bring innovation to
+                                            our services each day. Connect with us to know what unique services we
+                                            offer.</p>
+                                    </div>
+                                    <div class="col-md-6 pt-2 bg-dark wow fadeInLeft" data-wow-delay="0.4s">
+                                        <i class="fa fa-check text-primary me-2"></i>
+                                        <h5 class="text-primary d-inline">Confidentiality</h5>
+                                        <p class="text-white ms-3">It is our secret to success where we promise to secure
+                                            client data, and even non-team employees do not have access to your data.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="feature-content-inner d-md-none d-block">
+                                <h4 class="text-primary">Our Values</h4>
+                                <div class="row mt-3">
+                                    <div class="col-md-6 pt-2 bg-dark wow fadeInLeft" data-wow-delay="0.4s">
+                                        <i class="fa fa-check text-primary me-2"></i>
+                                        <h5 class="text-primary d-inline">Integrity</h5>
+                                        <p class="text-white ms-3">To achieve our goals to vision, our culture is
+                                            designed to be honest, transparent, and true. Our dedicated team integrates
+                                            with our clients and integrates better.</p>
+                                    </div>
+                                    <div  class="col-md-6 pt-2 wow fadeInLeft bg-white" data-wow-delay="0.6s">
+                                        <i class="fa fa-check text-primary me-2"></i>
+                                        <h5 class="text-primary d-inline">Quality</h5>
+                                        <p class="text-dark ms-3">Our goals, acts, and actions are dictated by quality
+                                            needs. Quality needs guide our technology, procedures, and policies.</p>
+                                    </div>
+                                    <div class="col-md-6 pt-2 wow fadeInLeft bg-dark" data-wow-delay="0.6s">
+                                        <i class="fa fa-check text-primary me-2"></i>
+                                        <h5 class="text-primary d-inline">Customer Focus</h5>
+                                        <p class="text-white ms-3">Our actions are guided by client needs, and we do
+                                            everything to satisfy them. Our workload for planning is reduced as we are
+                                            clear on satisfying the client at the end.</p>
+                                    </div>
+                                    <div class="col-md-6 pt-2 bg-white wow fadeInLeft" data-wow-delay="0.4s">
+                                        <i class="fa fa-check text-primary me-2"></i>
+                                        <h5 class="text-primary d-inline">Innovation</h5>
+                                        <p class="text-dark ms-3">Our recruitment cell well aligns with our business
                                             goals to have creative employees and create a culture to bring innovation to
                                             our services each day. Connect with us to know what unique services we
                                             offer.</p>
@@ -1048,6 +1089,42 @@
         </div>
     </div>
     <!-- Copyright End -->
+
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Thank you for submitting the form!
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="thankYouModalLabel">Opps Something went wrong!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                An error occurred while submitting the form
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+  
 
 
     <!-- Back to Top -->

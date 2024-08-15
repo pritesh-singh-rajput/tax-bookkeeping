@@ -1,17 +1,27 @@
 
 /*** Spinner Start ***/
+.modal{
+    z-index: 99999 !important;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
     transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
+    z-index: 9999;
 }
 
 #spinner.show {
     transition: opacity .5s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
+}
+
+#spinner.show-transparent {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+    background-color: transparent !important;
 }
 /*** Spinner End ***/
 
@@ -252,8 +262,13 @@
 /*** Navbar End ***/
 
 /*** Carousel Hero Header Start ***/
+.header-carousel{
+    position: relative;
+    overflow: hidden;
+}
 .header-carousel .header-carousel-item img {
     object-fit: cover;
+    position: absolute;
 }
 
 
@@ -317,8 +332,12 @@
     100% {margin-top: 35%;}
 }
 
+.carousel-caption .container{
+    height: 100%;
+    margin-top: 100px;
+}
 .header-carousel .header-carousel-item .carousel-caption {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     left: 0;

@@ -106,7 +106,7 @@ document.getElementById("nav-explore").addEventListener("click", function () {
     smartSpeed: 2000,
     center: false,
     dots: false,
-    loop: true,
+    loop: false,
     margin: 25,
     nav: true,
     navText: [

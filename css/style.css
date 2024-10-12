@@ -5,6 +5,11 @@ html {
 .modal{
     z-index: 99999 !important;
 }
+
+.header-txt{
+    font-size: 1.3rem;
+}
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -192,8 +197,9 @@ html {
 }
 
 .face-div .ceo-img-box img{
-    max-width: 250px;
+    max-width: 260px;
     height: auto;
+    background-color: whitesmoke;
 }
 .face-div .ceo-content{
     padding-right: 1rem;

@@ -201,9 +201,7 @@ html {
     height: auto;
     background-color: whitesmoke;
 }
-.face-div .ceo-content{
-    padding-right: 1rem;
-}
+
 
 
 @media(max-width:500px){
@@ -218,6 +216,10 @@ html {
         max-width: unset !important;
         width: 100%;
     }
+    .face-div .ceo-container .ceo-content{
+        text-align: center;
+    }
+    
 }
 
 @media (min-width: 992px) {
